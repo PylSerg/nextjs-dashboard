@@ -1,9 +1,11 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
+import { customers } from "@/app/lib/placeholder-data";
+import Table from "@/app/ui/customers/table";
 
 export const metadata: Metadata = {
-  title: 'Customers',
+	title: "Customers",
 };
 
 export default function Page() {
-  return <p>Customers Page</p>;
+	return <Table customers={customers} />;
 }
